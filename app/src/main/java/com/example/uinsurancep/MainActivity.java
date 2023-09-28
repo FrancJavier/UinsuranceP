@@ -43,11 +43,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void RegistrarCuenta(View v){
-        Intent Ingresar = new Intent(this, PaginaRegistro .class);
-        startActivity(Ingresar);
+    public void Registrar(View v){
+        Intent Registrar = new Intent(this, Registro.class);
+        startActivity(Registrar);
 
     }
-
 
 }

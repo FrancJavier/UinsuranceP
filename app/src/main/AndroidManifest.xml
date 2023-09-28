@@ -15,6 +15,9 @@
         android:theme="@style/Theme.UinsuranceP"
         tools:targetApi="31">
         <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
             android:name=".PaginaRegistro"
             android:exported="false" />
         <activity
