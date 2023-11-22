@@ -1,4 +1,4 @@
-package com.example.uinsurancep;
+package com.example.uinsurancep.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.net.Uri;
+
+import com.example.uinsurancep.R;
 
 public class PlanillaPoliza extends AppCompatActivity {
 

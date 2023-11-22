@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F42534"
-    tools:context=".MainActivity">
-    <!-- ACÁ IMPLEMENTAR FONDO DIABLO LOCO ARRIBA DE TOOLS-->
+    tools:context=".Vista.MainActivity">
 
-
-    <!-- ICONOS REDES SOCIALES -->
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/simbolo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:text=" Bienvenido a"
+        android:text="Bienvenido a"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,11 +34,10 @@
         app:layout_constraintVertical_bias="0.14" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text=" AppUinsuranceP"
+        android:text="AppUinsuranceP"
         android:textColor="#FFFFFF"
         android:textSize="40dp"
         android:layout_centerHorizontal="true"
@@ -45,101 +49,97 @@
         app:layout_constraintVertical_bias="0.186" />
 
 
-    <!-- REDES SOCIALES -->
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="! Hola !"
+        android:text="!Hola!"
         android:textColor="#ffff"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.365" />
+        app:layout_constraintVertical_bias="0.254" />
 
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="235dp"
+
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#ffff"
         android:orientation="vertical"
-        android:translationX="100dp"
-        android:translationY="300dp"
-        android:layout_gravity="center"
-        android:background="#ffff">
+        android:gravity="center"
+        android:drawableLeft="@drawable/usermain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-        <!--
-        <TextView
-            android:id="@+id/Ingresar"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:fontFamily=""
-            android:text="RUT"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:layout_centerHorizontal="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.313"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.476" />-->
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
+            <!-- ImageView para el icono de usuario -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/usermain"
+                android:layout_marginEnd="8dp" />
 
-        <EditText
-            android:id="@+id/EspacioRut"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:layout_margin="3dp"
-            android:background="@drawable/forma_edit_text"
-            android:hint="RUT "
-            android:maxLength="11"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.395"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.543" />
-        <!--
-        <TextView
-            android:id="@+id/Ingresar"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/RutMain"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/forma_edit_text"
+                android:hint="Rut"
+                android:inputType="textCapCharacters|text"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:autofillHints=""
+                android:layout_marginBottom="0.5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:fontFamily=""
-            android:text="Clave"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:layout_centerHorizontal="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.313"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.476" />-->
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-        <EditText
-            android:id="@+id/Contrasena"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:layout_margin="3dp"
-            android:background="@drawable/forma_edit_text"
-            android:hint="Clave"
-            android:inputType="textPassword"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
+            <!-- ImageView para el icono de usuario -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/keymain"
+                android:layout_marginEnd="8dp" />
+
+            <!-- EditText para la clave -->
+            <EditText
+                android:id="@+id/ClaveMain"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/forma_edit_text"
+                android:hint="Clave"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
 
         <Button
-            android:id="@+id/Ingresar"
+            android:id="@+id/IngresarMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-
             android:backgroundTint="#F42534"
             android:onClick="Ingresar"
             android:text="Ingresar"
@@ -164,63 +164,86 @@
             android:id="@+id/Olvidar"
             android:layout_width="290dp"
             android:layout_height="40dp"
+            android:layout_gravity="center"
             android:backgroundTint="#FFFFFF"
             android:onClick="Olvidar"
             android:text="¿ Olvidaste tu contraseña ?"
-            android:layout_gravity="center"
             android:textColor="#ffff5722" />
 
 
     </LinearLayout>
 
+
+
+
+
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="#ffff"
-        android:translationY="660dp"
+        android:layout_height="160dp"
+        android:background="@drawable/fondorodeado"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-        <ImageButton
-            android:id="@+id/Facebook"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical|start"
-            android:background="@drawable/facebook"
-            android:onClick="Facebook"
-            android:translationX="100dp"
-            app:layout_constraintVertical_bias="0.5" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="80dp">
 
-        <ImageButton
-            android:id="@+id/X"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical|start"
-            android:background="@drawable/x"
-            android:onClick="X"
-            android:translationX="140dp"
-            app:layout_constraintVertical_bias="0.5" />
+            <!-- Primer ImageButton -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
 
-        <ImageButton
-            android:id="@+id/Instagram"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical|start"
-            android:background="@drawable/instagram"
-            android:onClick="Instagram"
-            android:translationX="180dp"
-            app:layout_constraintVertical_bias="0.5" />
+                <ImageButton
+                    android:id="@+id/Oficinas"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ubicacionmain" />
 
-        <TextView
-            android:id="@+id/copyrightTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="9dp"
-            android:layout_gravity="center_vertical|start"
-            android:text="© 2023 Francisco Araya. Todos los derechos reservados."
-            android:textColor="#808080"
-            android:textSize="10dp"
-            android:translationY="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sucursales"
+                    android:textColor="#F42534"/>
+            </LinearLayout>
+
+            <!-- Espacio entre ImageButton y TextView -->
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <!-- Segundo ImageButton -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/whatssap"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whatssapmain"
+                    android:onClick="emergencias" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayuda"
+                    android:textColor="#F42534"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
 
     </LinearLayout>
 

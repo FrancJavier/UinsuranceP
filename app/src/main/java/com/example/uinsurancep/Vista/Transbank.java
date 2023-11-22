@@ -1,14 +1,16 @@
-package com.example.uinsurancep;
+package com.example.uinsurancep.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PolizaSiniestro extends AppCompatActivity {
+import com.example.uinsurancep.R;
+
+public class Transbank extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_poliza_siniestro);
+        setContentView(R.layout.activity_transbank);
     }
 }

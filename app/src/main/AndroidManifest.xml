@@ -15,25 +15,31 @@
         android:theme="@style/Theme.UinsuranceP"
         tools:targetApi="31">
         <activity
-            android:name=".Registro"
+            android:name=".Vista.RecuperacionContrasena"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.Ubicacion"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.Registro"
             android:exported="false" />
         <activity
             android:name=".PaginaRegistro"
             android:exported="false" />
         <activity
-            android:name=".PolizaSiniestro"
+            android:name=".Vista.PolizaSiniestro"
             android:exported="false" />
         <activity
-            android:name=".Transbank"
+            android:name=".Vista.Transbank"
             android:exported="false" />
         <activity
-            android:name=".PlanillaPoliza"
+            android:name=".Vista.PlanillaPoliza"
             android:exported="false" />
         <activity
-            android:name=".PlanillaSiniestro"
+            android:name=".Vista.PlanillaSiniestro"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Vista.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

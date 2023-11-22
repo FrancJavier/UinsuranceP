@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Color de fondo -->
+        </shape>
+    </item>
+    <item android:top="0dp">
+        <bitmap
+            android:gravity="top"
+            android:src="@drawable/fondocurvo" /> <!-- Reemplaza con tu imagen de degradado -->
+    </item>
+</layer-list>

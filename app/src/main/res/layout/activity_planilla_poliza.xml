@@ -5,7 +5,7 @@
     android:id="@+id/BuscarPoliza"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlanillaPoliza">
+    tools:context=".Vista.PlanillaPoliza">
 
     <TextView
         android:id="@+id/textView4"
